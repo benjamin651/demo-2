@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BluePeak Lawn & Property Care | Professional Lawn Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#2E8B57',
+                            600: '#267548',
+                        },
+                        secondary: {
+                            500: '#4682B4',
+                            600: '#3A6F9A',
+                        }
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-poppins bg-[#8fef8e]">
+<!-- Navigation Component -->
+    <bluepeak-navbar></bluepeak-navbar>
+<!-- Hero Section -->
+    <section class="bg-gradient-to-r from-primary-500 to-secondary-500 text-white pt-24 pb-20 px-4 md:pt-32 md:pb-28">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Professional Lawn Care You Can Trust</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Reliable, professional service with results that last. Serving your community with pride since 2010.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="contact.html" class="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">Get a Free Quote</a>
+                <a href="services.html" class="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">View Services</a>
+            </div>
+</div>
+    </section>
+    <!-- Why Choose Us -->
+    <section class="py-16 px-4 bg-[#8fef8e]">
+<div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why Choose BluePeak</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="clock" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-white">Reliable Service</h3>
+                    <p class="text-white">We show up on time, every time. Your lawn care schedule is our priority.</p>
+                </div>
+                <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="award" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-white">Professional Results</h3>
+                    <p class="text-white">Trained professionals deliver quality work that enhances your property value.</p>
+                </div>
+                <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="dollar-sign" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-white">Fair Pricing</h3>
+                    <p class="text-white">Transparent pricing with no hidden fees. Quality service that fits your budget.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Preview -->
+<section class="py-16 px-4 bg-gradient-to-r from-primary-500 to-secondary-500 text-white">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 text-white">Our Featured Services</h2>
+        
+        <!-- Flex container for services and image -->
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-8">
+            
+            <!-- Left Column: Services -->
+            <div class="flex-1 space-y-4">
+                <!-- Lawn Mowing Service -->
+                <div class="group relative">
+                    <div class="p-6 rounded-xl shadow-md transition-all duration-300 bg-white cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-secondary-100 w-14 h-14 rounded-full flex items-center justify-center">
+                                    <i data-feather="scissors" class="text-black w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800">Lawn Mowing</h3>
+                            </div>
+                            <i data-feather="chevron-down" class="text-gray-600 w-6 h-6 transform group-hover:rotate-180 transition-transform duration-300"></i>
+                        </div>
+                        <div class="overflow-hidden max-h-0 group-hover:max-h-96 transition-all duration-500 ease-in-out">
+                            <div class="pt-4">
+                                <p class="text-gray-600 mb-2">Regular, professional mowing keeps your lawn healthy and looking its best. We adjust cutting height seasonally for optimal growth.</p>
+                                <p class="text-sm text-gray-500">Price varies based on lawn size</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seasonal Cleanup Service -->
+                <div class="group relative">
+                    <div class="p-6 rounded-xl shadow-md transition-all duration-300 bg-white cursor-pointer">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-secondary-100 w-14 h-14 rounded-full flex items-center justify-center">
+                                    <i data-feather="sun" class="text-black w-6 h-6"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800">Seasonal Cleanup</h3>
+                            </div>
+                            <i data-feather="chevron-down" class="text-gray-600 w-6 h-6 transform group-hover:rotate-180 transition-transform duration-300"></i>
+                        </div>
+                        <div class="overflow-hidden max-h-0 group-hover:max-h-96 transition-all duration-500 ease-in-out">
+                            <div class="pt-4">
+                                <p class="text-gray-600 mb-2">Spring and fall cleanups prepare your yard for the changing seasons, removing debris and promoting healthy growth.</p>
+                                <p class="text-sm text-gray-500">Price varies based on property size</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Image -->
+            <div class="flex-1">
+                <img src="https://huggingface.co/spaces/Matb3nj1/greenthumb-glory-lawn-perfection-pro/resolve/main/images/michael-smith-1MNJ9y1Wr50-unsplash.jpg" alt="Lawn care illustration" class="w-full h-full object-cover rounded-xl shadow-md">
+</div>
+        </div>
+
+        <!-- View All Services Button -->
+        <div class="text-center mt-8">
+            <a href="services.html" class="bg-white inline-block hover:bg-green-400 text-black font-medium py-3 px-8 rounded-lg shadow-md transition duration-300"">View All Services</a>
+        </div>
+    </div>
+</section>
+<!-- Gallery Preview -->
+    <section class="py-16 px-4" style="background-color: #8fef8e;">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Work</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/nature/640x360/101" alt="Lawn care service" class="w-full h-48 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/nature/640x360/102" alt="Lawn mowing service" class="w-full h-48 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/nature/640x360/103" alt="Property maintenance" class="w-full h-48 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <img src="http://static.photos/nature/640x360/104" alt="Hedge trimming" class="w-full h-48 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="gallery.html" class="inline-block bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Preview -->
+    
+    <section class="py-16 px-4 bg-gradient-to-r from-primary-500 to-secondary-500">
+<div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">What Our Clients Say</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-90 p-8 rounded-xl shadow-md">
+<div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"I've been using BluePeak for two years now and couldn't be happier. Their team is always punctual, professional, and does fantastic work. My lawn has never looked better!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-primary-500 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Mark T.</h4>
+                            <p class="text-sm text-gray-500">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-90 p-8 rounded-xl shadow-md">
+<div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"As a property manager with multiple units, reliability is crucial. BluePeak has never missed an appointment in three years of service. Their attention to detail saves me time and headaches."</p>
+                    <div class="flex items-center">
+                        <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-primary-500 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Sarah L.</h4>
+                            <p class="text-sm text-gray-500">Property Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-90 p-8 rounded-xl shadow-md md:hidden lg:block">
+<div class="flex mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.966a1 1 0 00.95.69h4.174c.969 0 1.371 1.24.588 1.81l-3.377 2.455a1 1 0 00-.364 1.118l1.287 3.966c.3.921-.755 1.688-1.54 1.118l-3.378-2.454a1 1 0 00-1.175 0l-3.378 2.454c-.784.57-1.838-.197-1.539-1.118l1.286-3.966a1 1 0 00-.364-1.118L2 9.393c-.783-.57-.38-1.81.588-1.81h4.174a1 1 0 00.95-.69l1.287-3.966z"/>
+  </svg>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"After trying several lawn services, BluePeak stands out for their excellent communication and consistent quality. They transformed my neglected yard into a neighborhood showpiece."</p>
+                    <div class="flex items-center">
+                        <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-primary-500 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Jason R.</h4>
+                            <p class="text-sm text-gray-500">Local Resident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="testimonials.html" class="inline-block bg-white hover:bg-green-400 text-primary-600 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">Read More Testimonials</a>
+</div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-20 px-4 text-gray-800" style="background-color: #8fef8e">
+<div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Lawn?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Contact us today for a free quote and experience the BluePeak difference.</p>
+            <a href="contact.html" class="inline-block bg-primary-500 text-white hover:bg-primary-600 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">Get Started Now</a>
+</div>
+    </section>
+
+    <!-- Footer Component -->
+    <bluepeak-footer></bluepeak-footer>
+
+    <!-- Component Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

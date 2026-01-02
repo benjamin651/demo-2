@@ -1,0 +1,81 @@
+
+/* Custom styles that extend Tailwind */
+@layer components {
+    .btn-primary {
+        @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-lg shadow-md transition duration-300;
+    }
+    .yellow-star {
+        fill: #facc15;
+    }
+    .btn-secondary {
+        @apply bg-secondary-500 hover:bg-secondary-600 text-white font-medium py-3 px-8 rounded-lg shadow-md transition duration-300;
+    }
+    [data-feather="star"] {
+        fill: #facc15;
+        stroke: #facc15;
+    }
+    .btn-outline {
+        @apply border-2 border-white text-white hover:bg-white hover:text-primary-600 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300;
+    }
+    .star-filled {
+        fill: #facc15;
+        stroke: #facc15;
+    }
+}
+/* Ensure stars are filled */
+[data-feather="star"] {
+    fill: #facc15;
+    stroke: #facc15;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+/* Featured services container */
+.hovered-element {
+    margin-left: 2rem;
+}
+
+/* Custom hover effects */
+.service-card:hover .service-icon {
+    transform: rotate(5deg) scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.service-icon {
+    transition: all 0.3s ease;
+}
+/* Gallery image hover */
+.gallery-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+/* Service dropdown animation */
+.service-dropdown {
+    transition: max-height 0.5s ease-in-out;
+}
+/* Animation for CTA buttons */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(46, 139, 87, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(46, 139, 87, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(46, 139, 87, 0);
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2.5rem;
+    }
+}
