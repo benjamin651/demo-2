@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | BluePeak Lawn & Property Care</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Match Home Page Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#2E8B57',
+                            600: '#267548',
+                        },
+                        secondary: {
+                            500: '#4682B4',
+                            600: '#3A6F9A',
+                        }
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-poppins bg-[#8fef8e]">
+    <!-- Navigation Component -->
+    <bluepeak-navbar></bluepeak-navbar>
+
+    <!-- Thank You Hero -->
+    <section class="bg-[url('https://images.unsplash.com/photo-1533460004989-cef01064af7e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0')] bg-cover bg-center relative text-white pt-24 pb-20 px-4 md:pt-32 md:pb-28">
+        <div class="container mx-auto text-center relative z-10">
+            <div class="inline-block bg-black bg-opacity-50 p-6 rounded-xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Thank You!</h1>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    We've received your message and will get back to you shortly.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="/index.html" class="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">
+                        Back to Home
+                    </a>
+                    <a href="/services.html" class="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">
+                        View Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section class="py-16 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl font-bold mb-8 text-gray-800">What Happens Next?</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-[#2e8b57] p-6 rounded-xl shadow-md">
+                    <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="clock" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Quick Response</h3>
+                    <p class="text-white">We'll contact you within 24 hours to discuss your inquiry.</p>
+                </div>
+
+                <div class="bg-[#2e8b57] p-6 rounded-xl shadow-md">
+                    <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="calendar" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Free Consultation</h3>
+                    <p class="text-white">We'll schedule a time to assess your property and needs.</p>
+                </div>
+
+                <div class="bg-[#2e8b57] p-6 rounded-xl shadow-md">
+                    <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i data-feather="clipboard" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Custom Quote</h3>
+                    <p class="text-white">You'll receive a detailed, no-obligation service proposal.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-xl shadow-sm max-w-2xl mx-auto">
+                <h3 class="text-xl font-semibold mb-4 text-gray-800">Need Immediate Assistance?</h3>
+                <p class="text-gray-600 mb-6">Call us directly at <a href="tel:5551234567" class="text-primary-600 font-medium">(555) 123-4567</a> during business hours.</p>
+                <p class="text-sm text-gray-500">Monday - Friday: 8am - 6pm<br>Saturday: 9am - 2pm</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <bluepeak-footer></bluepeak-footer>
+
+    <!-- Component Scripts -->
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

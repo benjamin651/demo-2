@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,137 +9,160 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Same Tailwind config as home -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#2E8B57',
+                            600: '#267548',
+                        },
+                        secondary: {
+                            500: '#4682B4',
+                            600: '#3A6F9A',
+                        }
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
+
 <body class="font-poppins bg-[#8fef8e]">
-<!-- Navigation Component -->
-    <bluepeak-navbar></bluepeak-navbar>
-    
-    <!-- Contact Hero -->
-    <section class="bg-gradient-to-r from-[#2e8b57] to-[#4682b4] text-white py-20">
-  <div class="max-w-7xl mx-auto px-4">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">Contact BluePeak</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Get in touch for a free quote or to schedule service.</p>
-        </div>
-    </section>
 
-    <!-- Contact Form -->
-    <section class="py-16 px-4">
-        <div class="container mx-auto max-w-4xl">
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
-                    <form name="contact" method="POST" data-netlify="true" class="space-y-6">
-                        <input type="hidden" name="form-name" value="contact">
-                        <div>
-                            <label for="name" class="block text-gray-700 mb-2">Full Name</label>
-                            <input type="text" id="name" name="name" required 
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-gray-700 mb-2">Email Address</label>
-                            <input type="email" id="email" name="email" required 
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                        </div>
-                        <div>
-                            <label for="phone" class="block text-gray-700 mb-2">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" 
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                        </div>
-                        <div>
-                            <label for="service" class="block text-gray-700 mb-2">Service Interested In</label>
-                            <select id="service" name="service" 
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
-                                <option value="">Select a service</option>
-                                <option value="Lawn Mowing">Lawn Mowing</option>
-                                <option value="Seasonal Cleanup">Seasonal Cleanup</option>
-                                <option value="Hedge Trimming">Hedge Trimming</option>
-                                <option value="Property Maintenance">Property Maintenance</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-gray-700 mb-2">Message</label>
-                            <textarea id="message" name="message" rows="4" 
-                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"></textarea>
-                        </div>
-                        <button type="submit" 
-                                class="w-full hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-lg shadow-md transition duration-300" style="background-color: #2e8b57;">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-                
-                <div>
-                    <h2 class="text-3xl font-bold mb-6 text-gray-800">Contact Information</h2>
-                    <div class="space-y-6">
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 p-3 rounded-full mr-4">
-                                <i data-feather="map-pin" class="text-primary-500 w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold mb-1 text-gray-800">Address</h3>
-                                <p class="text-gray-600">123 Green Valley, Suburbia</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 p-3 rounded-full mr-4">
-                                <i data-feather="phone" class="text-primary-500 w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold mb-1 text-gray-800">Phone</h3>
-                                <p class="text-gray-600">(555) 123-4567</p>
-                                <p class="text-sm text-gray-500">Mon-Fri: 8am-6pm</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 p-3 rounded-full mr-4">
-                                <i data-feather="mail" class="text-primary-500 w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold mb-1 text-gray-800">Email</h3>
-                                <p class="text-gray-600">info@bluepeaklawn.com</p>
-                                <p class="text-sm text-gray-500">Response within 24 hours</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 p-3 rounded-full mr-4">
-                                <i data-feather="clock" class="text-primary-500 w-6 h-6"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-semibold mb-1 text-gray-800">Service Hours</h3>
-                                <p class="text-gray-600">Monday - Saturday: 7am-5pm</p>
-                                <p class="text-gray-600">Sunday: Closed</p>
-                            </div>
-                        </div>
+<!-- Navigation -->
+<bluepeak-navbar></bluepeak-navbar>
+
+<!-- Contact Hero (same as home) -->
+<section class="bg-[url('https://images.unsplash.com/photo-1533460004989-cef01064af7e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0')] bg-cover bg-center relative text-white pt-24 pb-20 px-4 md:pt-32 md:pb-28">
+    <div class="container mx-auto text-center relative z-10">
+        <div class="inline-block bg-black bg-opacity-50 p-6 rounded-xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Contact BluePeak</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Get in touch for a free quote or to schedule service.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-16 px-4 bg-white" id="contact-form">
+    <div class="container mx-auto max-w-3xl">
+
+        <div class="bg-primary-500 rounded-xl shadow-md p-8">
+            <h2 class="text-3xl font-bold text-center mb-8 text-black">
+                Request Your Free Quote
+            </h2>
+
+            <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="/thank-you.html"
+                class="space-y-6"
+            >
+
+                <!-- Netlify hidden input -->
+                <input type="hidden" name="form-name" value="contact">
+
+                <!-- Honeypot -->
+                <p class="hidden">
+                    <label>
+                        Don’t fill this out:
+                        <input name="bot-field" />
+                    </label>
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-black mb-1">
+                            Your Name *
+                        </label>
+                        <input
+                            type="text"
+                            name="name"
+                            required
+                            class="w-full px-4 py-2 border rounded-md focus:ring-primary-500 focus:border-primary-500"
+                        >
                     </div>
-                    
-                            </li>
-                        </ul>
+
+                    <div>
+                        <label class="block text-sm font-medium text-black mb-1">
+                            Email Address *
+                        </label>
+                        <input
+                            type="email"
+                            name="email"
+                            required
+                            class="w-full px-4 py-2 border rounded-md focus:ring-primary-500 focus:border-primary-500"
+                        >
                     </div>
                 </div>
-            </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-black mb-1">
+                        Service Interest *
+                    </label>
+                    <select
+                        name="service"
+                        required
+                        class="w-full px-4 py-2 border rounded-md focus:ring-primary-500 focus:border-primary-500"
+                    >
+                        <option value="" disabled selected>Select a service...</option>
+                        <option>Lawn Mowing</option>
+                        <option>Seasonal Cleanup</option>
+                        <option>Hedge Trimming</option>
+                        <option>Property Maintenance</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-black mb-1">
+                        Your Message *
+                    </label>
+                    <textarea
+                        name="message"
+                        rows="6"
+                        required
+                        class="w-full px-4 py-2 border rounded-md focus:ring-primary-500 focus:border-primary-500"
+                        placeholder="Give a brief description of the service you need..."
+                    ></textarea>
+                </div>
+
+                <div class="pt-2">
+                        <button
+                        type="submit"
+                        class="w-full bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-green-300 transition shadow-md"
+                    >
+                        Send Message
+                    </button>
+                    <input type="hidden" name="redirect" value="thank-you.html">
+<p class="text-sm text-gray-500 mt-2">
+                        <span class="text-red-500">*</span> Required fields
+                    </p>
+                </div>
+
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    
-    <!-- CTA Section -->
-    <section class="bg-gradient-to-r from-[#2e8b57] to-[#4682b4] text-white py-20">
-  <div class="max-w-7xl mx-auto px-4">
-<div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Get Started?</h2>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Contact us today for a free, no-obligation quote on our lawn care services.</p>
-            <a href="contact.html" class="inline-block bg-white text-black hover:bg-primary-600 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">Get Your Free Quote</a>
-</div>
-    </section>
+<!-- Footer -->
+<bluepeak-footer></bluepeak-footer>
 
-    <!-- Footer Component -->
-    <bluepeak-footer></bluepeak-footer>
+<!-- Scripts -->
+<script src="components/navbar.js"></script>
+<script src="components/footer.js"></script>
+<script src="script.js"></script>
+<script>feather.replace();</script>
 
-    <!-- Component Scripts -->
-    <script src="components/navbar.js"></script>
-    <script src="components/footer.js"></script>
-    <script src="script.js"></script>
-    <script>feather.replace();</script>
 </body>
-</html>
+</html

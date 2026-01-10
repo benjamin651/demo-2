@@ -9,123 +9,188 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Match Home Page Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#2E8B57',
+                            600: '#267548',
+                        },
+                        secondary: {
+                            500: '#4682B4',
+                            600: '#3A6F9A',
+                        }
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
 </head>
+
 <body class="font-poppins bg-[#8fef8e]">
-<!-- Navigation Component -->
+    <!-- Navigation Component -->
     <bluepeak-navbar></bluepeak-navbar>
-    
-    <!-- About Hero -->
-    <section class="bg-gradient-to-r from-[#2e8b57] to-[#4682b4] text-white py-20">
-  <div class="max-w-7xl mx-auto px-4">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">About BluePeak</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Reliable. Professional. Built to Last. Our story and values that guide everything we do.</p>
+
+    <!-- About Hero (same as home + dark bubble) -->
+    <section class="bg-[url('https://images.unsplash.com/photo-1533460004989-cef01064af7e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0')] bg-cover bg-center relative text-white pt-24 pb-20 px-4 md:pt-32 md:pb-28">
+        <div class="container mx-auto text-center relative z-10">
+            <div class="inline-block bg-black bg-opacity-50 p-6 rounded-xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6">About BluePeak</h1>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">
+                    Reliable. Professional. Built to Last. Our story and values that guide everything we do.
+                </p>
+                <a href="contact.html" class="bg-white text-primary-600 hover:bg-gray-100 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">
+                    Get a Free Quote
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- Our Story -->
-    <section class="py-16 px-4">
+    <!-- Our Story (match home: white section) -->
+    <section class="py-16 px-4 bg-white">
         <div class="container mx-auto max-w-4xl">
             <div class="flex flex-col md:flex-row gap-12 items-center">
                 <div class="md:w-1/2">
-                    <img src="http://static.photos/people/640x360/301" alt="BluePeak team working" class="w-full rounded-xl shadow-lg">
+                    <img src="https://huggingface.co/spaces/Matb3nj1/clear-cut-crew-lawn-masters/resolve/main/images/group%20pic.jpg" alt="BluePeak team working" class="w-full rounded-xl shadow-lg">
                 </div>
                 <div class="md:w-1/2">
                     <h2 class="text-3xl font-bold mb-6 text-gray-800">Our Story</h2>
-                    <p class="text-gray-600 mb-4">Founded in 2010 by landscape professional Michael Johnson, BluePeak began as a small operation with one truck and a commitment to exceptional service.</p>
-                    <p class="text-gray-600 mb-4">What started as a neighborhood lawn mowing service has grown into a full-scale property care company serving residential and commercial clients throughout the region.</p>
-                    <p class="text-gray-600">Our growth has been organic, built on word-of-mouth referrals from satisfied clients who appreciate our reliability and attention to detail.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Our Values -->
-    <section class="bg-gradient-to-r from-[#2e8b57] to-[#4682b4] text-white py-20">
-  <div class="max-w-7xl mx-auto px-4">
-<div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12 text-white">Our Values</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i data-feather="award" class="text-black w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Quality</h3>
-                    <p class="text-gray-600">We take pride in every job, no matter the size. Our team is trained to the highest standards and uses professional-grade equipment.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-                    <div class="bg-secondary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i data-feather="heart" class="text-black w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Integrity</h3>
-                    <p class="text-gray-600">Honest communication and fair pricing are at our core. We'll never recommend services you don't need.</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
-                        <i data-feather="calendar" class="text-black w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Consistency</h3>
-                    <p class="text-gray-600">Rain or shine, we're committed to our schedule. Your property will receive care when promised, every time.</p>
+                    <p class="text-gray-600 mb-4">
+                        Founded in 2010 by landscape professional Michael Johnson, BluePeak began as a small operation
+                        with one truck and a commitment to exceptional service.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        What started as a neighborhood lawn mowing service has grown into a full-scale property care
+                        company serving residential and commercial clients throughout the region.
+                    </p>
+                    <p class="text-gray-600">
+                        Our growth has been organic, built on word-of-mouth referrals from satisfied clients who
+                        appreciate our reliability and attention to detail.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Meet the Team -->
-    <section class="py-16 px-4">
+    <!-- Our Values (match home "Why Choose" style: white section + green cards) -->
+    <section class="py-16 px-4 bg-primary-500">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Values</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="award" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-black ">Quality</h3>
+                    <p class="text-black">
+                        We take pride in every job, no matter the size. Our team is trained to the highest standards and uses
+                        professional-grade equipment.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="heart" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-black">Integrity</h3>
+                    <p class="text-black">
+                        Honest communication and fair pricing are at our core. We'll never recommend services you don't need.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-primary-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="calendar" class="text-white w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-black">Consistency</h3>
+                    <p class="text-black">
+                        Rain or shine, we're committed to our schedule. Your property will receive care when promised, every time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Team (match home: white section) -->
+    <section class="py-16 px-4 bg-white">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Meet the Team</h2>
+
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                <div class="bg-[#2e8b57] p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-center border border-gray-100">
                     <img src="http://static.photos/people/400x400/301" alt="Michael Johnson" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Michael Johnson</h3>
-                    <p class="text-secondary-500 mb-2">Founder & CEO</p>
-                    <p class="text-gray-600">With over 20 years in landscaping, Michael ensures every client receives the same care he'd give his own property.</p>
+                    <h3 class="text-xl font-semibold mb-2 text-black">Michael Johnson</h3>
+                    <p class="text-white mb-2 font-medium">Founder & CEO</p>
+                    <p class="text-white">
+                        With over 20 years in landscaping, Michael ensures every client receives the same care he'd give his own property.
+                    </p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+
+                <div class="bg-[#2e8b57] p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-center border border-gray-100">
                     <img src="http://static.photos/people/400x400/302" alt="Sarah Williams" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Sarah Williams</h3>
-                    <p class="text-secondary-500 mb-2">Operations Manager</p>
-                    <p class="text-gray-600">Sarah coordinates our crews and ensures seamless service from initial quote to final cleanup.</p>
+                    <h3 class="text-xl font-semibold mb-2 text-black">Sarah Williams</h3>
+                    <p class="text-white mb-2 font-medium">Operations Manager</p>
+                    <p class="text-white">
+                        Sarah coordinates our crews and ensures seamless service from initial quote to final cleanup.
+                    </p>
                 </div>
-                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+
+                <div class="bg-[#2e8b57] p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 text-center border border-gray-100">
                     <img src="http://static.photos/people/400x400/303" alt="David Chen" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-semibold mb-2 text-gray-800">David Chen</h3>
-                    <p class="text-secondary-500 mb-2">Lead Horticulturist</p>
-                    <p class="text-gray-600">David's plant expertise helps clients maintain healthy, beautiful landscapes year-round.</p>
+                    <h3 class="text-xl font-semibold mb-2 text-black">David Chen</h3>
+                    <p class="text-white mb-2 font-medium">Lead Horticulturist</p>
+                    <p class="text-white">
+                        David's plant expertise helps clients maintain healthy, beautiful landscapes year-round.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Community Involvement -->
-    <section class="bg-gradient-to-r from-[#2e8b57] to-[#4682b4] text-white py-20">
-  <div class="max-w-7xl mx-auto px-4">
+    <!-- Community Involvement (match home: green section like Services Preview / Testimonials Preview) -->
+    <section class="py-16 px-4 bg-[#2e8b57] text-white">
         <div class="container mx-auto max-w-4xl text-center">
             <h2 class="text-3xl font-bold mb-6 text-white">Community Involvement</h2>
-            <p class="text-white mb-8">We believe in giving back to the communities we serve. Each year, BluePeak volunteers time and resources to:</p>
+            <p class="text-white mb-10">
+                We believe in giving back to the communities we serve. Each year, BluePeak volunteers time and resources to:
+            </p>
+
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
                     <i data-feather="home" class="text-black w-10 h-10 mx-auto mb-4"></i>
-                    <p class="text-black">Maintain public parks and playgrounds</p>
+                    <p class="text-gray-800 font-medium">Maintain public parks and playgrounds</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
+
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
                     <i data-feather="heart" class="text-black w-10 h-10 mx-auto mb-4"></i>
-                    <p class="text-black">Support local school gardens</p>
+                    <p class="text-gray-800 font-medium">Support local school gardens</p>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
+
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
                     <i data-feather="users" class="text-black w-10 h-10 mx-auto mb-4"></i>
-                    <p class="text-gray-600">Sponsor youth sports teams</p>
+                    <p class="text-gray-800 font-medium">Sponsor youth sports teams</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- CTA Section -->
-    <section class="py-20 px-4 text-gray-800" style="background-color: #8fef8e">
-<div class="container mx-auto text-center">
+
+    <!-- CTA Section (match home CTA style: white background) -->
+    <section class="py-20 px-4 bg-white text-gray-800">
+        <div class="container mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Experience the BluePeak Difference?</h2>
             <p class="text-xl mb-8 max-w-2xl mx-auto">Join our growing family of satisfied clients today.</p>
-            <a href="contact.html" class="inline-block hover:bg-primary-600 text-white font-medium py-3 px-8 rounded-lg shadow-md transition duration-300" style="background-color: #2e8b57;">Get a free quote</a>
-</div>
+            <a href="contact.html" class="inline-block bg-primary-500 text-white hover:bg-primary-600 font-medium py-3 px-8 rounded-lg shadow-md transition duration-300">
+                Get a Free Quote
+            </a>
+        </div>
     </section>
 
     <!-- Footer Component -->
